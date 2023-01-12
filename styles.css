@@ -1,5 +1,5 @@
 
-body{
+#home-space{
     margin: 0;
     background-image: url(images/background-home-desktop.jpg);
     /* background-size: cover; */
@@ -10,14 +10,14 @@ body{
 }
 
 @media (max-width: 40rem) {
-     body{
+     #home-space{
         background-image: url(images/background-home-mobile.jpg);
     } 
     
 }
 
 @media (max-width: 48rem) {
-    body{
+    #home-space{
         background-image: url(images/background-home-tablet.jpg);
         
 }
@@ -34,8 +34,6 @@ hr{
     left: 30px;
 
 }
-
-
 
 .nav-item{
     position: relative; 
@@ -72,7 +70,6 @@ h1{
 .feature-description{
     width: 450px;
     line-height: 2;
-
 }
 
 .circle{
@@ -90,11 +87,151 @@ h1{
     
 }
 
-/* destination europa */
-#destination-europa{
-    background-color: aqua;
-    text-align: center;
+/* destination mars */
+#destination-mars{
+    background-image: url(destination/background-destination-desktop.jpg);   
+    color: #ffff ;
+}
+
+  @media (max-width: 40rem){
+    #destination-mars{
+        background-image: url(destination/background-destination-mobile.jpg);
+    }
+    
+}
+
+@media (max-width: 48rem){
+    #destination-mars{
+        background-image: url(destination/background-destination-tablet.jpg);
+    } 
+} 
+
+/* .destination-mars-main{
+    align-items: center;
+} */
+
+.destination-mars-image{
+    position: relative;
+    float: left;
+    padding-left: 200px;
+    
+}
+
+.destination-mars-feature{
+    float: right;
+    position: relative;
+    right: 100px;
+    margin-top: 5%;
+}
+
+.destination-link{
+    text-decoration: none;
+}
+
+.destination-mars-description{
+    /* position: absolute; */
+    width: 450px;
+    line-height: 2;
 }
 
 
 
+/* CREW */
+/* On desktop */
+    #crew-engineer{
+        background-image: url(crew/background-crew-desktop.jpg);
+    }
+
+
+/* On mobile */
+@media (max-width: 40rem){
+    #crew-engineer{
+        background-image: url(crew/background-crew-mobile.jpg);
+    }
+}
+/* on tablets */
+@media (max-width: 48rem){
+    #crew-engineer{
+        background-image: url(crew/background-crew-tablet.jpg) ;
+    }
+}
+
+.crew-feature-container{
+    
+}
+
+.crew-feature{
+    position: absolute;
+    
+}
+
+.crew-title{
+
+}
+
+.crew-personality{
+
+}
+
+.crew-description{
+    width: 450px;
+}
+
+.crew-image{
+    float: right;
+    padding-right: 200px;
+    position: relative;
+}
+
+/* Technology */
+
+/* technology-vehicle */
+#technology{
+    background-image: url(technology/background-technology-desktop.jpg);
+    /* color: red; */
+}
+
+
+@media (max-width: 40rem){
+    #technology{
+        background-image: url(technology/background-technology-mobile.jpg);
+        color: green;
+    }
+}
+
+@media (max-width: 48rem){
+    #technology{
+        background-image: url(technology/background-technology-tablet.jpg);
+        color: blue;
+    }   
+}
+
+.technology-features{
+    color: #ffff;
+}
+
+.technology-title{
+    line-height: 5;
+}
+
+/* .technology-description{
+    display: ;
+} */
+
+.technology-about{
+    width: 450px;
+    position: absolute;
+}
+
+.technology-image{
+    float: right;
+    padding: 0  100px 80px 0;  
+    bottom: 30px;
+}
+
+.technology-intro{
+    font-size: 30px;
+    /* line-height: 2; */
+}
+
+/* technology-capsule */
