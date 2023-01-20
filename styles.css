@@ -5,8 +5,7 @@
     /* background-size: cover; */
     background-size: auto;
     background-position: center;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 @media (max-width: 40rem) {
@@ -25,6 +24,9 @@
 }
 
 
+a:visited{
+    color: white;
+}
 
 hr{
    /* border: dotted #EAF6F6;*/
@@ -55,7 +57,9 @@ hr{
     display: block;
     margin: auto;
     color: #ffff;
-    
+    /* left: 15%; */
+    padding-left: 200px;
+    top: 82px;
 }
 
 h1{
@@ -70,54 +74,62 @@ h1{
 .feature-description{
     width: 450px;
     line-height: 2;
+    position: absolute;
 }
 
-.circle{
-    width: 50px;
-    height: 50px;
-    background: #ffff;
-    margin:10% auto;
-    border-radius:50%;
+.explore-circle{
+     height: 200px;
+     width: 200px;
+     background-color: #ffff;
+     /* background-color: #bbb; */
+     border-radius: 50%;
+     /* display: inline-block; */
+     text-align: center;
+     font-size: 20px;
+     margin-left: 65%;
 }
 
-.circle-content{
-    color: #000;
-    font-size: 80px;
-    text-align: center;
-    
-}
+/* .circle-content{
+    font-size: 30px;
+    text-align: center; 
+} */
 
-/* destination mars */
-#destination-mars{
+/* destination  */
+#destination-bgimage{
     background-image: url(destination/background-destination-desktop.jpg);   
     color: #ffff ;
 }
 
   @media (max-width: 40rem){
-    #destination-mars{
+    #destination-bgimage{
         background-image: url(destination/background-destination-mobile.jpg);
     }
     
 }
 
 @media (max-width: 48rem){
-    #destination-mars{
+    #destination-bgimage{
         background-image: url(destination/background-destination-tablet.jpg);
     } 
 } 
 
-/* .destination-mars-main{
-    align-items: center;
-} */
+.uppercase{
+    text-transform: uppercase;
+}
 
-.destination-mars-image{
+.destination-title{
+    padding-left: 200px;
+}
+
+.destination-image{
     position: relative;
     float: left;
-    padding-left: 200px;
+    padding: 50px 200px;
+    
     
 }
 
-.destination-mars-feature{
+.destination-feature{
     float: right;
     position: relative;
     right: 100px;
@@ -126,55 +138,61 @@ h1{
 
 .destination-link{
     text-decoration: none;
+
 }
 
-.destination-mars-description{
-    /* position: absolute; */
+.destination-description{
+     /* position: relative;  */
     width: 450px;
     line-height: 2;
 }
 
 
+/* ............................CREW................................... */
 
-/* CREW */
+/* crew-enginner */
+
 /* On desktop */
-    #crew-engineer{
+    #crew-bgimage{
         background-image: url(crew/background-crew-desktop.jpg);
     }
 
-
 /* On mobile */
 @media (max-width: 40rem){
-    #crew-engineer{
+    #crew-bgimage{
         background-image: url(crew/background-crew-mobile.jpg);
     }
 }
 /* on tablets */
 @media (max-width: 48rem){
-    #crew-engineer{
-        background-image: url(crew/background-crew-tablet.jpg) ;
+    #crew-bgimage{
+        background-image: url(crew/background-crew-tablet.jpg) ; 
     }
 }
 
-.crew-feature-container{
+.crew-features-container{
+    color: #ffff;
     
 }
 
-.crew-feature{
-    position: absolute;
-    
-}
-
-.crew-title{
-
-}
-
-.crew-personality{
-
-}
 
 .crew-description{
     width: 450px;
+    padding-top: 30px;
+}
+
+ .crew-link{
+    position: absolute;
+} 
+
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* margin: 1px; */
+    background-color: #fff;
+    /* position: absolute;   */
+    
 }
 
 .crew-image{
@@ -183,26 +201,28 @@ h1{
     position: relative;
 }
 
+
+
 /* Technology */
 
 /* technology-vehicle */
 #technology{
     background-image: url(technology/background-technology-desktop.jpg);
-    /* color: red; */
+    
 }
 
 
 @media (max-width: 40rem){
     #technology{
         background-image: url(technology/background-technology-mobile.jpg);
-        color: green;
+        
     }
 }
 
 @media (max-width: 48rem){
     #technology{
         background-image: url(technology/background-technology-tablet.jpg);
-        color: blue;
+    
     }   
 }
 
